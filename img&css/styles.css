@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: min-content;
+    background-image: url("./fondo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*-----MENU----*/
+.menu {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background-color: #222;
+    border-bottom: 2px solid rgb(144, 28, 202);
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.menu a:hover {
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+/*ICONO HAMBURGUESA*/
+.menuIcon {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.iconMenu {
+    transform: translateY(-300px);
+}
+
+.content-menu {
+    transition: 1s;
+    transform: translateY(-300px);
+    text-align: center;
+}
+
+.content-menu a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-menu a:hover {
+    background-color: rgba(144, 28, 202, 0.8);
+}
+
+.iconMenu.show {
+    transition: 1s;
+    transform: translateY(250px);
+}
+
+.iconMenu.hide {
+    transition: 1s;
+    transform: translateY(-300px);
+}
+
+
+
+.content-all {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+
+h1,
+h2 {
+    font-family: monospace;
+    color: yellow
+}
+
+h1.rotate {
+    transition: 3s;
+    transform: rotateY(360deg);
+    font-size: 50px;
+}
+
+.quienesSomos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quienesSomos img {
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.content-all img.rotate {
+    transition: 3s;
+    transform: rotate(-360deg);
+    transition-delay: 1s;
+}
+
+p {
+    font-size: 20px;
+}
+
+.quienesP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-all span {
+    color: red;
+}
+
+.pMision {
+    transform: translateX(-200%);
+}
+
+.pMision.show {
+    transition: 3s;
+    transform: translateX(0);
+    transition-delay: 2s;
+}
+
+
+.misionRot {
+    width: 100px;
+    transform: translateX(1000%);
+}
+
+.misionRot.show {
+    text-align: center;
+    transition: 3s;
+    transform: translateX(0);
+    transform: scale(2);
+    transition-delay: 2s;
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.mis {
+    width: 60%;
+    margin: auto;
+}
+
+
+.footer {
+    line-height: 25px;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid rgb(144, 28, 202);
+    width: 100%;
+    background-color: #222;
+    color: white
+}
+
+#footer_Pot {
+    color: white
+}
+
+.footer-redes {
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-redes img {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50%);
+}
+
+.footer-redes img:hover {
+    width: 55px;
+    height: 55px;
+    opacity: 0.6;
+}
+
+.copyr {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#politicas {
+    cursor: pointer;
+}
+
+#politicas:hover {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.conten {
+    width: 60%;
+    margin: auto;
+}
+
+.objetivos {
+    transform: translateY(1000%);
+}
+
+.Objet.increment {
+    margin-top: 10px;
+    transition: 1s;
+    transform: scale(2);
+}
+
+.objetivos.show {
+    transition: 1s;
+    transform: translateY(0);
+    transition-delay: 3s;
+}
+
+.objetivos p {
+    line-height: 30px;
+}
+
+
+#potaxio-trabajo.rot {
+    transition: 3s;
+    transform: rotateY(-360deg);
+}
+
+.porque,
+.beneficios {
+    line-height: 30px;
+    width: 80%;
+    opacity: 0;
+    margin: auto;
+    background-color: rgba(144, 28, 202, 0.3);
+    border-radius: 15px;
+}
+
+.porque.rot,
+.beneficios.rot {
+    transition: 3s;
+    opacity: 1;
+    transform: rotateX(360deg);
+    transition-delay: 1s;
+}
+
+.btn {
+    width: 80%;
+    margin: auto;
+}
+
+#contacto_redes {
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+}
+
+.CONT.animacion {
+    transition: 2s;
+    transform: rotate(-360deg);
+}
+
+#contacto_redes img,
+.crearProyecto img,
+.ContactoEmail img {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50%);
+    cursor: pointer;
+}
+
+#contacto_redes img:hover,
+.crearProyecto img:hover,
+.ContactoEmail img:hover {
+    width: 55px;
+    height: 55px;
+    opacity: 0.6;
+}
+
+.contenidoJuegos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.serviciosTitle.animacion {
+    transition: 2s;
+    transform: rotate(360deg);
+}
+
+.card {
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(139, 78, 170, 0.4);
+}
+
+.card-title {
+    border-bottom: 5px solid rgb(144, 28, 202);
+}
+
+.card-title p {
+    color: white;
+    margin-top: 5px;
+}
+
+.card-title img {
+    margin: auto;
+    border-radius: 20px;
+}
+
+/*------Dispositivos móviles------*/
+@media (max-width:1500px) {
+
+    .conten,
+    .mis {
+        width: 80%;
+    }
+
+    .p2 {
+        margin-top: -25px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    .conten,
+    .mis {
+        width: 100%;
+    }
+
+    .quienesP,
+    .p2,
+    .mis p {
+        padding: 0 20px;
+    }
+
+    .copyr {
+        width: 80%;
+    }
+}
+
+@media (max-width:900px) {
+
+    .items {
+        display: none;
+    }
+
+    .menuIcon {
+        display: flex;
+    }
+
+    .content-all {
+        margin-top: -100px;
+    }
+
+    .quienesSomos {
+        justify-content: center;
+    }
+
+    .quienesP,
+    .p2,
+    .mis p {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width:901px) {
+
+    .iconMenu,
+    .content-menu {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .copyr {
+        display: block;
+    }
+
+    .contenidoJuegos {
+        justify-content: center;
+    }
+
+    .card {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .porque,
+    .beneficios {
+        width: 95%;
+    }
+
+    #contacto_redes {
+        width: 80%;
+    }
+
+    .copyr {
+        width: 95%;
+    }
+}
+
+@media (max-width: 300px) {
+    #contacto_redes {
+        width: 95%;
+    }
+
+    .contenidoJuegos {
+        width: 95%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
