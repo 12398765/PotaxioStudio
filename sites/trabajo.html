@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <script> var trabajo=0; </script>
     <div class="menu mb-5">
         <div class="logo">
              <img src="../img&css/logo.PNG" alt="logo Potaxio Studios" id="logo"
@@ -111,17 +110,14 @@
 </body>
 <script src="../JavaScript/main.js"></script>
 <script>
-    if(trabajo==0){
         document.getElementById("potaxio-trabajo").classList.remove("rot");
         document.querySelector(".porque").classList.remove("rot");
         document.querySelector(".beneficios").classList.remove("rot");
-    }
+    
         document.getElementById("potaxio-trabajo").classList.add("rot");
         document.querySelector(".porque").classList.add("rot");
         document.querySelector(".beneficios").classList.add("rot");
-        setTimeout(function(){
-            trabajo=1;
-        },4500);
+
     
 </script>
 
