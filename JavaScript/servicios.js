@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".serviciosTitle").classList.add("animacion");
+    setTimeout(function(){
+        document.querySelector(".serviciosTitle").classList.remove("animacion");
+    }, 2000);
 })
 
 var cont = 0;
